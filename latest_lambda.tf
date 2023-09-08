@@ -71,6 +71,7 @@ resource "aws_lambda_permission" "apigw" {
   statement_id  = "AllowAPIGatewayInvoke"
   action        = "lambda:InvokeFunction"
   function_name = aws_lambda_function.examplepy.function_name
-  principal     = "apigateway.amazonaws.com"
+  pipal     = "apigateway.amazonaws.com"
   source_arn    = "${aws_api_gateway_rest_api.examplepy.execution_arn}/*/*"
 }
+this is chandra
